@@ -1,12 +1,17 @@
 /*
-  Yun HTTP Client
+  Yun Yun Google App Engine Datastore read/write
 
- This example for the Arduino Yún shows how create a basic
- HTTP client that connects to the internet and downloads
- content. In this case, you'll connect to the Arduino
- website and download a version of the logo as ASCII text.
+ This example writes sensor data to Google App Engine's NDB Datastore via a GET Query string. The 'devicename' is the key used to store all readings put() on the server
+ 
+ For local development set the local boolean to 'true' and start google app engine via the command line with the following
+
+_________________<your_terminal_name>$  dev_appserver.py --host=<Your_Computer's IP address> ndb_store/   _________________________________
+The default port is ':8080' which should be appended to the URL.  see: https://developers.google.com/appengine/docs/python/tools/devserver#Python_Running_the_development_web_server for further info
+
+
 
  created by Tom igoe
+ 
  May 2013
 
  This example code is in the public domain.
